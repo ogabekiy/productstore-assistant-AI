@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="uz">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ProDuct AI Assistant</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="ProDuct AI Assistant">
+        <span class="brand-mark">Pro</span><span>Duct</span>
+      </a>
+      <nav class="nav" aria-label="Kategoriyalar">
+        <span>Apple</span>
+        <span>PC</span>
+        <span>Audio</span>
+        <span>Video</span>
+      </nav>
+      <a class="phone" href="tel:+998884148888">+998 (88) 414-88-88</a>
+    </header>
+
+    <main class="shell">
+      <section class="intro" aria-labelledby="title">
+        <p class="eyebrow">Professional yondashuv</p>
+        <h1 id="title">ProDuct yordamchisi</h1>
+        <p class="lead">
+          Mahsulot, narx, kafolat, yetkazib berish yoki do'kon manzili haqida so'rang.
+        </p>
+        <div class="trust-row" aria-label="Do'kon afzalliklari">
+          <span>12–24 oy rasmiy kafolat</span>
+          <span>1–4 kun yetkazib berish</span>
+          <span>Har kuni 10:00–21:00</span>
+        </div>
+      </section>
+
+      <section class="chat-panel" aria-label="Chat">
+        <div class="chat-header">
+          <div>
+            <p class="assistant-label">AI konsultant</p>
+            <h2>Sizga qanday yordam kerak?</h2>
+          </div>
+          <span class="status">Online</span>
+        </div>
+
+        <div id="messages" class="messages" aria-live="polite">
+          <article class="message assistant">
+            <p>Assalomu alaykum! ProDuct bo'yicha savolingizni yozing, yordam beraman.</p>
+          </article>
+        </div>
+
+        <div class="quick-actions" aria-label="Tezkor savollar">
+          <button type="button" data-question="Do'kon manzilini ayta olasizmi?">Manzil</button>
+          <button type="button" data-question="Hozir do'kon ochiqmi?">Ish vaqti</button>
+          <button type="button" data-question="iPhone 18 Pro narxi qancha?">iPhone 18 Pro</button>
+          <button type="button" data-question="Yetkazib berish qancha vaqt oladi?">Yetkazib berish</button>
+        </div>
+
+        <form id="chat-form" class="composer">
+          <input
+            id="message-input"
+            name="message"
+            type="text"
+            autocomplete="off"
+            placeholder="Savolingizni yozing..."
+            required
+          />
+          <button type="submit">Yuborish</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
